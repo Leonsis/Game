@@ -51,7 +51,7 @@ function posicaoRamdomicaMosca() {
 
     // Criando as posições randomicamente
     var posicaoX = Math.floor(Math.random() * largura - 90);
-    var posicaoY = Math.floor(Math.random() * altura - 90);
+    var posicaoY = Math.floor(Math.random() * altura - 140);
     
     /*
         Aqui está sendo feira uma estrutura de condição
