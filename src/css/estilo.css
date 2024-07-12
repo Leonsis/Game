@@ -34,11 +34,15 @@ body {
 @media (max-width: 991px) {
     body {
         background: url(../imagens/bg.jpg) no-repeat top;
-        background-size: 200%;
+        background-size: 300%;
     }
 
     img {
         width: 80%;
+    }
+
+    .vida img {
+        width: 10%;
     }
 }
 
