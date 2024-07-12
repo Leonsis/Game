@@ -34,7 +34,7 @@ body {
 @media (max-width: 991px) {
     body {
         background: url(../imagens/bg.jpg) no-repeat top;
-        background-size: 300%; 
+        background-size: 200%;
     }
 
     img {
