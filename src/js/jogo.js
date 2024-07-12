@@ -2,7 +2,7 @@
 var altura = 0; // Variavel para function ajustaTamanhoPalcoJogo().
 var largura = 0; // Variavel para function ajustaTamanhoPalcoJogo().
 var vidas = 1; // Variavel para function posicaoRamdomicaMosca().
-var tempo = 10; // Variavel que vai ficar dentro da variavel cronometro.
+var tempo = 50; // Variavel que vai ficar dentro da variavel cronometro.
 var nivel = window.location.search;// Variavel para recuperar o nivel do jogo.
 nivel = nivel.replace('?', '');
 var criaMoscaTempo = 1500;
