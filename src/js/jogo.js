@@ -15,7 +15,7 @@ if(nivel === 'normal') {
 } else if(nivel === 'dificil') {
     criaMoscaTempo = 1000;
 } else if(nivel === 'sDificio') {
-    criaMoscaTempo = 750;
+    criaMoscaTempo = 800;
 }
 
 function ajustaTamanhoPalcoJogo() {
