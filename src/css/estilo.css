@@ -46,7 +46,6 @@ body {
     }
 }
 
-
 .painel {
     position: absolute;
     width: 210px;
@@ -66,4 +65,9 @@ body {
     font-size: 20px;
     font-size: 20px;
     font-weight: bold;
+}
+
+.contador {
+    float: right;
+    display: inline;
 }
