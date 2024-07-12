@@ -70,7 +70,9 @@ function posicaoRamdomicaMosca() {
     mosca.id = 'mosca';
     mosca.onclick = function() {
         this.remove();
+        contador += 1;
     }
+    document.getElementById('contador').innerHTML = contador;
 }
 
 // Está function vai servir para criar tamanhos aleatorios para a imagem.
