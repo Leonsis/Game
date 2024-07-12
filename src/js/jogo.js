@@ -2,10 +2,13 @@
 var altura = 0; // Variavel para function ajustaTamanhoPalcoJogo().
 var largura = 0; // Variavel para function ajustaTamanhoPalcoJogo().
 var vidas = 1; // Variavel para function posicaoRamdomicaMosca().
-var tempo = 50; // Variavel que vai ficar dentro da variavel cronometro.
-var nivel = window.location.search;// Variavel para recuperar o nivel do jogo.
-nivel = nivel.replace('?', '');
-var criaMoscaTempo = 1500;
+var tempo = 5; // Variavel que vai ficar dentro da variavel cronometro.
+var nivel = window.location.search; // Variavel para recuperar o nivel do jogo.
+nivel = nivel.replace('?', '');// Está sendo atribuido o novo valor para a variavel nivel, onde não possui a ?.
+var criaMoscaTempo = 1500; // Variavel para o tempo que aparece o mosquito.
+var mosca // Variavel na qual foi colocada uma tag html que foi criada pelo comando .createElement('img').
+
+var contador = 0; // Variavel para cintar quantas moscas foram mortas.
 
 if(nivel === 'normal') {
     criaMoscaTempo = 1500;
@@ -18,7 +21,6 @@ if(nivel === 'normal') {
 function ajustaTamanhoPalcoJogo() {
     altura = window.innerHeight;
     largura = window.innerWidth;
-    console.log(`Altura: ${largura}, Largura ${altura}`);
 }
 ajustaTamanhoPalcoJogo();
 
@@ -50,7 +52,6 @@ function posicaoRamdomicaMosca() {
     // Criando as posições randomicamente
     var posicaoX = Math.floor(Math.random() * largura - 90);
     var posicaoY = Math.floor(Math.random() * altura - 90);
-    console.log(posicaoX, posicaoY);
     
     /*
         Aqui está sendo feira uma estrutura de condição
@@ -60,7 +61,7 @@ function posicaoRamdomicaMosca() {
     posicaoY = posicaoY < 0 ? 0 : posicaoY;
 
     //Criar o elemento  html
-    var mosca = document.createElement('img');
+    mosca = document.createElement('img');
     mosca.src = 'src/imagens/mosca.png';
     mosca.className = tamanhoAleatorio() + ' ' + ladoAleatorio();
     mosca.style.left = posicaoX + 'px';
