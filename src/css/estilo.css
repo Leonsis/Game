@@ -36,6 +36,10 @@ body {
         background: url(../imagens/bg.jpg) no-repeat top;
         background-size: 300%; 
     }
+
+    img {
+        width: 80%;
+    }
 }
 
 
