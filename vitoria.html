@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Normalise -->
+        <link rel="stylesheet" href="src/css/normalise.css">
+
+        <!-- estilo.css -->
+        <link rel="stylesheet" href="src/css/estilo.css">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css">
+
+        <!-- JS -->
+        <script src="src/js/jogo.js"></script>
+
+        <!--[if lt IE 9]>
+            <script src="src/js/html5shiv.js"></script>
+        <![endif]-->
+        <title>Mata musquito</title>
+    </head>
+    <!-- 
+        Neste caso o onresize está chamando a function ajustaTamanhoPalcoJogo.
+        Com o onresize é possivel saber as dimenções da janela atualizadas.
+    -->
+    <body onresize="ajustaTamanhoPalcoJogo()">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <img src="src/imagens/vitoria.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-dark btn-lg" onclick="window.location.href = 'index.html'">Reiniciar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="src/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
