@@ -98,3 +98,16 @@ img {
     padding: 5px;
     background-color: rgba(72, 209, 204, 0.5);
 }
+
+#ranking {
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+    background-color: rgba(72, 209, 204, 0.5);
+}
+
+#ranking div{
+    display: inline;
+}
