@@ -72,13 +72,13 @@ function posicaoRamdomicaMosca() {
     mosca.onclick = function() {
         this.remove();
         contador += 1;
-        localStorage.setItem('contador', contador);
+        localStorage.setItem('contador', contador);// Com o localStorage é possivel guardar valores.
     }
     document.getElementById('contador').innerHTML = contador;
 }
 
 function saidaContador() {
-    contador = localStorage.getItem('contador');
+    contador = localStorage.getItem('contador');// Aqui nos estamos recuperando o valor que foi guardado.
     if(contador === null) {
         contador = 0;
     } else {
