@@ -76,18 +76,19 @@ img {
 }
 
 .vidas {
-    float: left;
+    width: 100px;
 }
 
-
 .contador {
-    float: right;
-    display: inline;
-    margin-top: 20px;
+    margin-left: 5px;
 }
 
 #contador {
     display: inline;
+}
+
+.cronometro {
+    margin-left: 5px;
 }
 
 #instrucao {
