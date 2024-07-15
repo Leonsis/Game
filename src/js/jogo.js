@@ -11,7 +11,7 @@ var mosca // Variavel na qual foi colocada uma tag html que foi criada pelo coma
 var contador = 0; // Variavel para cintar quantas moscas foram mortas.
 
 if(nivel === 'normal') {
-    criaMoscaTempo = 1500;
+    criaMoscaTempo = 1200;
 } else if(nivel === 'dificil') {
     criaMoscaTempo = 1000;
 } else if(nivel === 'sDificio') {
