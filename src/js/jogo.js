@@ -27,8 +27,6 @@ ajustaTamanhoPalcoJogo();
 var cronometro = setInterval(function() {
     tempo += 1;
     document.getElementById('cronometro').innerHTML = tempo;
-
-    
 }, 1000);
 
 // Segundo fazer com que a imagem apareça em destinos aleatorioas na pagina web.
